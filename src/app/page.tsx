@@ -2,6 +2,7 @@ import { FloatingActions } from "@/components/layout/FloatingActions";
 import { FloorIndicator } from "@/components/layout/FloorIndicator";
 import { Navbar } from "@/components/layout/Navbar";
 import { Preloader } from "@/components/layout/Preloader";
+import { Hero } from "@/components/sections/Hero";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
       <Navbar />
       <FloorIndicator />
       <FloatingActions />
-      <main className="min-h-svh bg-navy-950" />
+      <main>
+        <Hero />
+      </main>
     </>
   );
 }
