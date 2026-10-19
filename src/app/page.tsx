@@ -5,6 +5,7 @@ import { Preloader } from "@/components/layout/Preloader";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { LiftTypes } from "@/components/sections/LiftTypes";
+import { LiftSimulator } from "@/components/sections/LiftSimulator";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <LiftTypes />
+        <LiftSimulator />
       </main>
     </>
   );
