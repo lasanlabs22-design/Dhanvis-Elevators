@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -4 128 130">
+  <defs>
+    <linearGradient id="b" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a7ae8"/>
+      <stop offset="0.45" stop-color="#0d4cc0"/>
+      <stop offset="1" stop-color="#0a2a6e"/>
+    </linearGradient>
+    <linearGradient id="s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9aa3ae"/>
+      <stop offset="0.38" stop-color="#f6f8fa"/>
+      <stop offset="0.62" stop-color="#b3bbc5"/>
+      <stop offset="1" stop-color="#e8ecf0"/>
+    </linearGradient>
+    <mask id="m">
+      <rect x="-10" y="-10" width="120" height="142" fill="white"/>
+      <path d="M-6 88 L50 32 L106 88 V104 L50 48 L-6 104 Z" fill="black"/>
+    </mask>
+  </defs>
+  <rect x="-14" y="-4" width="128" height="130" rx="26" fill="#ffffff"/>
+  <g transform="translate(10 12) scale(0.8)">
+    <g fill="url(#b)">
+      <g mask="url(#m)">
+        <path d="M0 0 H100 V82 H92 V8 H8 V82 H0 Z"/>
+        <path d="M18 33 H82 V66 H74 V41 H26 V66 H18 Z"/>
+        <path d="M50 12 L67 28.5 H33 Z"/>
+      </g>
+      <path d="M0 88 L50 38 L100 88 V99.3 L50 49.3 L0 99.3 Z"/>
+      <path d="M0 99 H8 V114 H12.5 V86.8 L18 81.3 V122 H0 Z"/>
+      <path d="M100 99 H92 V114 H87.5 V86.8 L82 81.3 V122 H100 Z"/>
+    </g>
+    <path d="M28.5 70.8 L50 49.3 L71.5 70.8 V122 H28.5 Z" fill="url(#s)"/>
+    <g fill="url(#b)">
+      <path d="M24.5 74.8 L28.5 70.8 V122 H24.5 Z"/>
+      <path d="M75.5 74.8 L71.5 70.8 V122 H75.5 Z"/>
+      <path d="M46 53.3 L50 49.3 L54 53.3 V122 H46 Z"/>
+    </g>
+  </g>
+</svg>
