@@ -3,6 +3,8 @@ import { FloorIndicator } from "@/components/layout/FloorIndicator";
 import { Navbar } from "@/components/layout/Navbar";
 import { Preloader } from "@/components/layout/Preloader";
 import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { LiftTypes } from "@/components/sections/LiftTypes";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <FloatingActions />
       <main>
         <Hero />
+        <About />
+        <LiftTypes />
       </main>
     </>
   );
