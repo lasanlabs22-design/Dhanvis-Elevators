@@ -6,6 +6,8 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { LiftTypes } from "@/components/sections/LiftTypes";
 import { LiftSimulator } from "@/components/sections/LiftSimulator";
+import { Showreel } from "@/components/sections/Showreel";
+import { Services } from "@/components/sections/Services";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <About />
         <LiftTypes />
         <LiftSimulator />
+        <Showreel />
+        <Services />
       </main>
     </>
   );
