@@ -8,6 +8,8 @@ import { LiftTypes } from "@/components/sections/LiftTypes";
 import { LiftSimulator } from "@/components/sections/LiftSimulator";
 import { Showreel } from "@/components/sections/Showreel";
 import { Services } from "@/components/sections/Services";
+import { Process } from "@/components/sections/Process";
+import { Gallery } from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
         <LiftSimulator />
         <Showreel />
         <Services />
+        <Process />
+        <Gallery />
       </main>
     </>
   );
