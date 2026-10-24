@@ -59,7 +59,7 @@ function ArdVisual() {
       </motion.div>
       <motion.p
         className="absolute bottom-2.5 left-3 right-3 flex items-center gap-1.5 font-mono text-[0.55rem] uppercase leading-tight tracking-[0.15em]"
-        animate={{ color: ["#94a0b4", "#ff2b2b", "#ecd492", "#34d399", "#94a0b4"] }}
+        animate={{ color: ["#9a9a9a", "#ff2b2b", "#ecd492", "#34d399", "#9a9a9a"] }}
         transition={{ duration: 6, times: [0, 0.2, 0.3, 0.72, 1], repeat: Infinity }}
       >
         <BatteryCharging className="size-3 shrink-0" /> Power cut → rescue → doors open
@@ -73,7 +73,7 @@ export function Safety() {
   const FirstIcon = ICONS[first.key];
   return (
     <section id="safety" className="section-screen grain overflow-hidden bg-ink text-white">
-      <div aria-hidden className="absolute -right-40 top-20 size-[600px] rounded-full bg-brand/20 blur-[150px]" />
+      <div aria-hidden className="absolute -right-40 top-20 size-[600px] rounded-full bg-white/[0.04] blur-[150px]" />
       <div className="container-x relative flex flex-col lg:flex-1">
         <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end lg:gap-12">
           <SectionHeading
@@ -92,8 +92,8 @@ export function Safety() {
 
         <div className="mt-12 grid gap-3 md:grid-cols-2 lg:mt-[4vh] lg:min-h-[400px] lg:flex-1 lg:grid-cols-5 lg:grid-rows-2">
           <Reveal className="md:col-span-2 lg:col-span-1 lg:row-span-2">
-            <article className="flex h-full flex-col gap-6 rounded-[22px] border border-white/10 bg-gradient-to-br from-brand/30 via-navy-900/60 to-transparent p-6 lg:p-[2.6vh]">
-              <span className="grid size-11 place-items-center rounded-2xl bg-brand text-white">
+            <article className="flex h-full flex-col gap-6 rounded-[22px] border border-white/10 bg-gradient-to-br from-white/[0.08] via-navy-900/60 to-transparent p-6 lg:p-[2.6vh]">
+              <span className="grid size-11 place-items-center rounded-2xl bg-white text-ink">
                 <FirstIcon className="size-5" />
               </span>
               <div>
@@ -131,13 +131,13 @@ export function Safety() {
             <button
               type="button"
               onClick={() => scrollToId("contact")}
-              className="group flex h-full w-full flex-col rounded-[22px] bg-brand p-6 text-left transition hover:bg-brand-light lg:p-[2.6vh]"
+              className="group flex h-full w-full flex-col rounded-[22px] bg-white p-6 text-left text-ink transition hover:bg-steel-200 lg:p-[2.6vh]"
             >
               <ArrowUpRight className="size-6 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               <span className="mt-auto pt-4 font-display text-base font-semibold leading-snug lg:text-[clamp(0.92rem,2vh,1.05rem)]">
                 Book a safety inspection
               </span>
-              <span className="mt-1.5 text-sm leading-relaxed text-white/80 lg:text-[clamp(0.76rem,1.6vh,0.875rem)]">
+              <span className="mt-1.5 text-sm leading-relaxed text-steel-600 lg:text-[clamp(0.76rem,1.6vh,0.875rem)]">
                 For your existing lift, any make and any age.
               </span>
             </button>

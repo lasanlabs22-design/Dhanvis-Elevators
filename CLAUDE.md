@@ -6,7 +6,7 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 
 ## Project
 
-Marketing website for Dhanvis Elevators Pvt Ltd (lift installation and service, Tirupati).
+Marketing website for Dhanvis Elevators Pvt Ltd (lift installation and service across Andhra Pradesh, based in Tirupati).
 
 - Stack: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS 4, Motion, Lenis. Single page in `src/app/page.tsx`.
 - Business content (phone, address, socials, lift types, services, FAQs, gallery, showreel) lives in `src/lib/site.ts`. Items marked `CONFIRM` still need the client's sign-off.

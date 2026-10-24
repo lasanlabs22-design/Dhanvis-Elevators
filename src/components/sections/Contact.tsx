@@ -15,7 +15,7 @@ const field =
 const label = "mb-1.5 block text-xs font-medium uppercase tracking-[0.15em] text-steel-400";
 
 const quick = [
-  { href: site.phoneHref, label: "Call", value: site.phone.replace("+91 ", ""), icon: Phone, iconBg: "bg-brand", external: false },
+  { href: site.phoneHref, label: "Call", value: site.phone.replace("+91 ", ""), icon: Phone, iconBg: "bg-white text-ink", external: false },
   { href: whatsappLink(), label: "WhatsApp", value: "Chat now", icon: WhatsAppIcon, iconBg: "bg-whatsapp", external: true },
   {
     href: site.socials.instagram,
@@ -53,7 +53,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="section-screen grain overflow-hidden bg-navy-950 text-white">
-      <div aria-hidden className="absolute -left-40 bottom-0 size-[620px] rounded-full bg-brand/25 blur-[150px]" />
+      <div aria-hidden className="absolute -left-40 bottom-0 size-[620px] rounded-full bg-white/[0.05] blur-[150px]" />
       <div className="container-x relative grid gap-12 lg:flex-1 lg:grid-cols-12 lg:gap-10">
         <div className="flex flex-col lg:col-span-5">
           <SectionHeading
@@ -70,14 +70,14 @@ export function Contact() {
                 key={l}
                 href={href}
                 {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="group flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-3.5 transition hover:border-white/25 hover:bg-white/[0.06]"
+                className="group flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-3 transition sm:p-3.5 hover:border-white/25 hover:bg-white/[0.06]"
               >
                 <span className={`grid size-10 place-items-center rounded-xl ${iconBg}`}>
                   <Icon className="size-[18px]" />
                 </span>
                 <span className="min-w-0">
                   <span className="block text-[0.65rem] uppercase tracking-[0.15em] text-steel-400">{l}</span>
-                  <span className="block truncate text-sm font-semibold">{value}</span>
+                  <span className="block truncate text-[0.8rem] font-semibold sm:text-sm">{value}</span>
                 </span>
               </a>
             ))}
@@ -160,7 +160,7 @@ export function Contact() {
                   {["G+1", "G+2", "G+3", "G+4", "G+5", "G+6 & above"].map((f) => (
                     <label key={f} className="cursor-pointer">
                       <input type="radio" name="floors" value={f} className="peer sr-only" />
-                      <span className="block rounded-full border border-white/12 px-4 py-1.5 text-sm text-steel-300 transition peer-checked:border-brand-light peer-checked:bg-brand/25 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-brand-light hover:border-white/30">
+                      <span className="block rounded-full border border-white/12 px-4 py-1.5 text-sm text-steel-300 transition peer-checked:border-brand-light peer-checked:bg-white/15 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-brand-light hover:border-white/30">
                         {f}
                       </span>
                     </label>

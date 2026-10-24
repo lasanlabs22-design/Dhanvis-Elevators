@@ -16,7 +16,7 @@ const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", dis
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Dhanvis Elevators Pvt Ltd | Lift Installation & Service in Tirupati",
+    default: "Dhanvis Elevators Pvt Ltd | Lift Installation & Service in Andhra Pradesh",
     template: "%s · Dhanvis Elevators",
   },
   description: site.description,
@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     "MRL lift",
     "lift AMC Tirupati",
     "lift repair Tirupati",
+    "lift installation Andhra Pradesh",
+    "elevators Andhra Pradesh",
+    "home lift Andhra Pradesh",
+    "lift AMC Andhra Pradesh",
+    "lift repair Andhra Pradesh",
     "Dhanvis Elevators",
   ],
   alternates: { canonical: "/" },
@@ -45,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dhanvis Elevators | Lift Installation & Service in Tirupati",
+    title: "Dhanvis Elevators | Lift Installation & Service in Andhra Pradesh",
     description: site.description,
   },
   robots: { index: true, follow: true },
@@ -53,7 +58,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#050c24",
+  themeColor: "#0a0a0a",
   width: "device-width",
   initialScale: 1,
 };
@@ -76,7 +81,7 @@ const jsonLd = {
     postalCode: site.address.pin,
     addressCountry: site.address.country,
   },
-  areaServed: { "@type": "City", name: "Tirupati" },
+  areaServed: { "@type": "State", name: "Andhra Pradesh" },
   sameAs: [site.socials.instagram],
   makesOffer: [
     "Lift installation",

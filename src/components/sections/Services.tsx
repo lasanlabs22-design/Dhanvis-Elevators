@@ -47,7 +47,7 @@ export function Services() {
                       05.{i + 1}
                     </span>
                     <div className="flex flex-1 items-center gap-4 lg:gap-5">
-                      <span className="grid size-11 shrink-0 place-items-center self-start rounded-2xl border border-navy-900/10 text-brand transition-all duration-500 group-hover:border-white/15 group-hover:bg-brand group-hover:text-white">
+                      <span className="grid size-11 shrink-0 place-items-center self-start rounded-2xl border border-navy-900/10 text-brand transition-all duration-500 group-hover:border-white/15 group-hover:bg-white group-hover:text-ink">
                         <Icon className="size-5 group-hover:hidden" />
                         <ArrowUpRight className="hidden size-5 group-hover:block" />
                       </span>

@@ -70,7 +70,7 @@ export function Hero() {
     >
       {/* Atmosphere */}
       <div aria-hidden className="absolute inset-0 -z-10">
-        <div className="absolute -right-40 -top-40 size-[720px] rounded-full bg-brand/30 blur-[140px]" />
+        <div className="absolute -right-40 -top-40 size-[720px] rounded-full bg-white/[0.06] blur-[140px]" />
         <div className="absolute -bottom-60 -left-40 size-[520px] rounded-full bg-navy-700/50 blur-[120px]" />
         <div className="grid-lines absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
         {RAILS.map((left, i) => (
@@ -92,7 +92,7 @@ export function Hero() {
                   <span className="absolute inset-0 animate-ping rounded-full bg-signal" />
                   <span className="relative size-2 rounded-full bg-signal" />
                 </span>
-                Lift installation &amp; service · Tirupati
+                Lift installation &amp; service · Andhra Pradesh
               </span>
             </motion.div>
 
@@ -141,10 +141,10 @@ export function Hero() {
                   e.preventDefault();
                   scrollToId("contact");
                 }}
-                className="group inline-flex items-center gap-3 rounded-full bg-brand py-2 pl-6 pr-2 font-semibold text-white shadow-[0_10px_40px_rgba(13,82,214,0.55)] transition hover:bg-brand-light"
+                className="group inline-flex items-center gap-3 rounded-full bg-white py-2 pl-6 pr-2 font-semibold text-ink shadow-[0_10px_40px_rgba(255,255,255,0.15)] transition hover:bg-steel-200"
               >
                 Book a free site survey
-                <span className="grid size-9 place-items-center rounded-full bg-white text-brand transition-transform group-hover:translate-x-1">
+                <span className="grid size-9 place-items-center rounded-full bg-ink text-white transition-transform group-hover:translate-x-1">
                   <ArrowRight className="size-4" />
                 </span>
               </a>

@@ -43,10 +43,10 @@ function PanelButton({
       aria-label={aria}
       aria-pressed={lit}
       className={`group flex h-12 flex-col items-center justify-center gap-1.5 rounded-xl transition active:scale-95 lg:h-[clamp(2.4rem,5.4vh,3rem)] ${
-        lit ? "text-[#8cc2ff] [filter:drop-shadow(0_0_8px_rgba(110,170,255,0.9))]" : "text-steel-200 hover:text-white"
+        lit ? "text-white [filter:drop-shadow(0_0_8px_rgba(255,255,255,0.9))]" : "text-steel-200 hover:text-white"
       }`}
     >
-      <span className={`h-[2px] w-6 rounded-full ${lit ? "bg-[#8cc2ff]" : "bg-steel-400/60"}`} />
+      <span className={`h-[2px] w-6 rounded-full ${lit ? "bg-white" : "bg-steel-400/60"}`} />
       {label ? <span className="font-display text-2xl font-semibold leading-none">{label}</span> : children}
     </button>
   );
@@ -184,7 +184,7 @@ export function LiftSimulator() {
         {/* Shaft cutaway */}
         <Reveal className="lg:col-span-5 lg:h-full">
           <div
-            className={`relative flex flex-col overflow-hidden rounded-[28px] bg-navy-950 p-5 text-white shadow-[0_50px_100px_-40px_rgba(8,20,58,0.6)] ring-1 transition-[box-shadow] duration-300 sm:p-7 lg:h-full lg:p-[3vh] ${
+            className={`relative flex flex-col overflow-hidden rounded-[28px] bg-navy-950 p-5 text-white shadow-[0_50px_100px_-40px_rgba(0,0,0,0.6)] ring-1 transition-[box-shadow] duration-300 sm:p-7 lg:h-full lg:p-[3vh] ${
               alarm ? "ring-4 ring-signal/70" : "ring-white/5"
             }`}
           >
@@ -238,7 +238,7 @@ export function LiftSimulator() {
                             : here
                               ? "text-white ring-1 ring-white/40"
                               : requested.includes(i)
-                                ? "text-[#8cc2ff] ring-1 ring-[#8cc2ff]/60"
+                                ? "text-steel-200 ring-1 ring-steel-200/60"
                                 : "text-steel-500"
                         }`}
                       >
@@ -271,17 +271,17 @@ export function LiftSimulator() {
                 {/* counterweight */}
                 <motion.div
                   style={{ top: cwTop, height: `${CW_H}%` }}
-                  className="absolute left-[74%] w-[12%] overflow-hidden rounded-md border border-steel-500/60 bg-[repeating-linear-gradient(180deg,#4a5468_0_6px,#2b3243_6px_8px)]"
+                  className="absolute left-[74%] w-[12%] overflow-hidden rounded-md border border-steel-500/60 bg-[repeating-linear-gradient(180deg,#4d4d4d_0_6px,#2b2b2b_6px_8px)]"
                 />
 
                 {/* car */}
                 <motion.div
                   style={{ top: carTop, height: `${CAR_H}%` }}
-                  className="absolute left-[25%] w-[22%] rounded-md border-2 border-steel-300 bg-navy-900 shadow-[0_0_40px_rgba(74,146,255,0.25)]"
+                  className="absolute left-[25%] w-[22%] rounded-md border-2 border-steel-300 bg-navy-900 shadow-[0_0_40px_rgba(255,255,255,0.18)]"
                 >
                   <div
                     className={`absolute inset-[3px] overflow-hidden rounded-[3px] transition-colors duration-500 ${
-                      light ? "bg-gradient-to-b from-[#fff4d6] via-[#f5e3b5] to-[#d9b871]" : "bg-gradient-to-b from-[#2a3142] to-[#151a26]"
+                      light ? "bg-gradient-to-b from-[#fff4d6] via-[#f5e3b5] to-[#d9b871]" : "bg-gradient-to-b from-[#2a2a2a] to-[#151515]"
                     }`}
                   >
                     <div className="absolute inset-x-0 top-0 flex h-[14%] items-center justify-center gap-1 bg-black/20">
@@ -316,8 +316,8 @@ export function LiftSimulator() {
 
         {/* Car operating panel */}
         <Reveal delay={0.15} className="flex items-center lg:col-span-3">
-          <div className="mx-auto w-full max-w-[270px] rounded-[32px] bg-gradient-to-b from-steel-300 via-steel-100 to-steel-400 p-[6px] shadow-[0_40px_80px_-30px_rgba(8,20,58,0.55)]">
-            <div className="rounded-[27px] bg-gradient-to-b from-[#0d1017] to-[#040508] px-6 pb-6 pt-6 lg:px-[2.6vh] lg:pb-[2.6vh] lg:pt-[2.6vh]">
+          <div className="mx-auto w-full max-w-[270px] rounded-[32px] bg-gradient-to-b from-steel-300 via-steel-100 to-steel-400 p-[6px] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.55)]">
+            <div className="rounded-[27px] bg-gradient-to-b from-[#0f0f0f] to-[#050505] px-6 pb-6 pt-6 lg:px-[2.6vh] lg:pb-[2.6vh] lg:pt-[2.6vh]">
               <div className="flex h-14 items-center justify-center gap-3 rounded-xl bg-black lg:h-[clamp(2.8rem,6.4vh,3.5rem)]">
                 <SevenSegment value={FLOORS[display]} className="h-9 lg:h-[clamp(1.6rem,4vh,2.25rem)]" />
                 <ChevronUp

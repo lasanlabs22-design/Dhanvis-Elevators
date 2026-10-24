@@ -39,12 +39,12 @@ function HorizontalTrack() {
   return (
     <div ref={ref} className="relative mt-[7vh] hidden lg:block">
       <div aria-hidden className="absolute left-[8.333%] right-[8.333%] top-[22px] h-[2px] bg-white/10">
-        <motion.div style={{ scaleX: fill }} className="absolute inset-0 origin-left bg-gradient-to-r from-brand to-brand-light" />
+        <motion.div style={{ scaleX: fill }} className="absolute inset-0 origin-left bg-gradient-to-r from-steel-500 to-brand-light" />
       </div>
       <motion.div
         aria-hidden
         style={{ left: carLeft }}
-        className="absolute top-[23px] z-10 grid h-11 w-9 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-md border-2 border-brand-light bg-navy-950 shadow-[0_0_30px_rgba(74,146,255,0.7)]"
+        className="absolute top-[23px] z-10 grid h-11 w-9 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-md border-2 border-brand-light bg-navy-950 shadow-[0_0_30px_rgba(255,255,255,0.35)]"
       >
         <span className="h-5 w-[2px] bg-brand-light" />
       </motion.div>
@@ -57,7 +57,7 @@ function HorizontalTrack() {
               <span
                 className={`relative z-0 grid size-[46px] place-items-center rounded-full border-2 font-mono text-xs font-semibold transition-all duration-500 ${
                   on
-                    ? "border-brand-light bg-brand/30 text-white shadow-[0_0_24px_rgba(74,146,255,0.55)]"
+                    ? "border-brand-light bg-white/15 text-white shadow-[0_0_24px_rgba(255,255,255,0.3)]"
                     : "border-white/15 bg-navy-900 text-steel-500"
                 }`}
               >
@@ -95,10 +95,10 @@ function VerticalTrack() {
   return (
     <div ref={ref} className="relative mx-auto mt-16 max-w-3xl lg:hidden">
       <div aria-hidden className="absolute bottom-0 left-5 top-0 w-[2px] bg-white/10">
-        <motion.div style={{ scaleY: progress }} className="absolute inset-0 origin-top bg-gradient-to-b from-brand-light to-brand" />
+        <motion.div style={{ scaleY: progress }} className="absolute inset-0 origin-top bg-gradient-to-b from-brand-light to-steel-500" />
         <motion.div
           style={{ top: carTop }}
-          className="absolute left-1/2 grid h-9 w-7 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-md border-2 border-brand-light bg-navy-950 shadow-[0_0_30px_rgba(74,146,255,0.7)]"
+          className="absolute left-1/2 grid h-9 w-7 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-md border-2 border-brand-light bg-navy-950 shadow-[0_0_30px_rgba(255,255,255,0.35)]"
         >
           <span className="h-4 w-[2px] bg-brand-light" />
         </motion.div>

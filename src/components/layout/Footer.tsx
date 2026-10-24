@@ -19,7 +19,7 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Logo variant="light" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-steel-400">
-              All types of lift installation &amp; service in Tirupati. Home, passenger, hospital, goods, capsule,
+              All types of lift installation &amp; service across Andhra Pradesh, from our base in Tirupati. Home, passenger, hospital, goods, capsule,
               hydraulic and MRL lifts, installed with care and maintained for life.
             </p>
             <ul className="mt-7 flex gap-3" aria-label="Social links">
@@ -116,7 +116,7 @@ export function Footer() {
 
       {/* Oversized wordmark */}
       <div aria-hidden className="pointer-events-none select-none overflow-hidden">
-        <p className="translate-y-[22%] text-center font-display text-[18vw] font-extrabold leading-none tracking-[-0.04em] text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.09)]">
+        <p className="pb-[2vw] text-center font-display text-[18vw] font-extrabold leading-none tracking-[-0.04em] text-white/[0.14] [text-shadow:0_0_20px_rgba(255,255,255,0.4),0_0_70px_rgba(255,255,255,0.2)]">
           DHANVIS
         </p>
       </div>

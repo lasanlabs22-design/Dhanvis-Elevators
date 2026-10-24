@@ -7,7 +7,7 @@ export const site = {
   name: "Dhanvis Elevators Pvt Ltd",
   shortName: "Dhanvis Elevators",
   description:
-    "Dhanvis Elevators Pvt Ltd installs, services and modernises all types of lifts in Tirupati: home lifts, passenger elevators, hospital, goods, capsule, hydraulic and MRL lifts, with AMC and 24/7 breakdown support.",
+    "Dhanvis Elevators Pvt Ltd installs, services and modernises all types of lifts across Andhra Pradesh, from its base in Tirupati: home lifts, passenger elevators, hospital, goods, capsule, hydraulic and MRL lifts, with AMC and 24/7 breakdown support.",
   // CONFIRM: final production domain
   url: "https://www.dhanviselevators.com",
   phone: "+91 98493 18445",

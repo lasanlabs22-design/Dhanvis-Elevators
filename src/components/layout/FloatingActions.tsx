@@ -5,15 +5,18 @@ import { Phone } from "lucide-react";
 import { useState } from "react";
 import { WhatsAppIcon } from "@/components/brand/BrandIcons";
 import { site, whatsappLink } from "@/lib/site";
+import { useActiveFloor } from "./useActiveFloor";
 
 export function FloatingActions() {
   const { scrollY } = useScroll();
   const [show, setShow] = useState(false);
+  const active = useActiveFloor();
   useMotionValueEvent(scrollY, "change", (y) => setShow(y > 500));
 
+  // Contact has its own call and WhatsApp buttons, so step aside there instead of covering the form
   return (
     <AnimatePresence>
-      {show && (
+      {show && active !== "contact" && (
         <motion.div
           className="fixed bottom-5 right-4 z-40 flex flex-col gap-3 xl:right-[23px]"
           initial={{ opacity: 0, y: 20 }}
