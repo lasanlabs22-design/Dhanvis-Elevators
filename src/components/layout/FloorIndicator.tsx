@@ -68,7 +68,7 @@ export function FloorIndicator() {
                     onClick={() => scrollToId(f.id)}
                     className={`grid size-7 place-items-center rounded-full font-mono text-[0.62rem] font-semibold transition ${
                       on
-                        ? "bg-brand-light/20 text-brand-light shadow-[0_0_14px_rgba(74,146,255,0.55)] ring-1 ring-brand-light/70"
+                        ? "bg-brand-light/20 text-brand-light shadow-[0_0_14px_rgba(255,255,255,0.35)] ring-1 ring-brand-light/70"
                         : "text-steel-500 hover:text-white"
                     }`}
                     aria-label={`Go to ${f.label}`}
@@ -86,8 +86,8 @@ export function FloorIndicator() {
         </div>
       </aside>
 
-      {/* Mobile / tablet: compact floor pill */}
-      <div className="pointer-events-none fixed bottom-5 left-4 z-40 xl:hidden">
+      {/* Tablet: compact floor pill (hidden on phones, where it covers the text) */}
+      <div className="pointer-events-none fixed bottom-5 left-4 z-40 hidden md:block xl:hidden">
         <div className="flex items-center gap-2.5 rounded-full border border-white/10 bg-ink/85 py-1.5 pl-1.5 pr-4 shadow-xl backdrop-blur-xl">
           <span className="grid h-8 min-w-8 place-items-center rounded-full bg-black px-1.5">
             <SevenSegment value={current.floor} digits={current.floor.length} className="h-4" />

@@ -42,7 +42,7 @@ export function LiftTypes() {
   return (
     <section id="lifts" className="section-screen grain overflow-hidden bg-navy-950 text-white">
       <div aria-hidden className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-brand-light/50 to-transparent" />
-      <div aria-hidden className="absolute -left-40 top-1/3 size-[600px] rounded-full bg-brand/15 blur-[140px]" />
+      <div aria-hidden className="absolute -left-40 top-1/3 size-[600px] rounded-full bg-white/[0.04] blur-[140px]" />
 
       <div className="container-x relative flex flex-col lg:flex-1">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-12">

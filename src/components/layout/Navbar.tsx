@@ -139,14 +139,14 @@ export function Navbar() {
                       onClick={() => go(f.id)}
                       className={`flex w-full items-center gap-3 rounded-2xl border px-3 py-3 text-left transition ${
                         active === f.id
-                          ? "border-brand-light/60 bg-brand/15 text-white"
+                          ? "border-brand-light/60 bg-white/10 text-white"
                           : "border-white/10 bg-white/[0.03] text-steel-200"
                       }`}
                     >
                       <span
                         className={`grid size-10 shrink-0 place-items-center rounded-full border font-display text-sm font-bold ${
                           active === f.id
-                            ? "border-brand-light text-brand-light shadow-[0_0_18px_rgba(74,146,255,0.5)]"
+                            ? "border-brand-light text-brand-light shadow-[0_0_18px_rgba(255,255,255,0.35)]"
                             : "border-white/20"
                         }`}
                       >

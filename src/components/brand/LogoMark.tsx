@@ -15,8 +15,8 @@ export function LogoMark({ className, variant = "color", title }: Props) {
   const mask = `m${uid}`;
   const stops =
     variant === "color"
-      ? ["#1a7ae8", "#0d4cc0", "#0a2a6e"]
-      : ["#a9d0ff", "#5b9dff", "#2a63d8"];
+      ? ["#3a3a3a", "#1a1a1a", "#000000"]
+      : ["#ffffff", "#e6e6e6", "#bdbdbd"];
 
   return (
     <svg
@@ -33,10 +33,10 @@ export function LogoMark({ className, variant = "color", title }: Props) {
           <stop offset="1" stopColor={stops[2]} />
         </linearGradient>
         <linearGradient id={steel} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#9aa3ae" />
-          <stop offset="0.38" stopColor="#f6f8fa" />
-          <stop offset="0.62" stopColor="#b3bbc5" />
-          <stop offset="1" stopColor="#e8ecf0" />
+          <stop offset="0" stopColor="#7a7a7a" />
+          <stop offset="0.38" stopColor="#d9d9d9" />
+          <stop offset="0.62" stopColor="#9a9a9a" />
+          <stop offset="1" stopColor="#c4c4c4" />
         </linearGradient>
         <mask id={mask}>
           <rect x="-10" y="-10" width="120" height="142" fill="white" />

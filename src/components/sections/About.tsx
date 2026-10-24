@@ -25,8 +25,8 @@ const pillars = [
   },
   {
     icon: Gauge,
-    title: "Local, responsive service",
-    desc: "A Tirupati team that answers the phone and reaches you fast.",
+    title: "Responsive, statewide service",
+    desc: "Based in Tirupati, serving sites across Andhra Pradesh.",
   },
 ];
 
@@ -37,7 +37,7 @@ export function About() {
       <div className="container-x relative grid items-center gap-16 lg:grid-cols-12 lg:gap-12">
         {/* Images */}
         <div className="relative lg:col-span-5">
-          <DoorReveal className="aspect-[4/5] rounded-[28px] shadow-[0_40px_80px_-30px_rgba(8,20,58,0.45)] lg:aspect-auto lg:h-[min(68vh,620px)]">
+          <DoorReveal className="aspect-[4/5] rounded-[28px] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.45)] lg:aspect-auto lg:h-[min(68vh,620px)]">
             <Image
               src={images["glass-atrium-lift"]}
               alt={imageAlt["glass-atrium-lift"]}
@@ -75,7 +75,7 @@ export function About() {
         <div className="lg:col-span-7 lg:pl-8">
           <SectionHeading
             floor="about"
-            title={"A Tirupati lift company\nwith an eye for detail."}
+            title={"Lifting Andhra Pradesh,\nwith an eye for detail."}
             highlight={["detail"]}
             intro="Dhanvis Elevators Pvt Ltd installs and services all types of lifts, from two-stop home lifts to busy commercial elevators. One accountable team, from the first survey to lifetime care."
           />
